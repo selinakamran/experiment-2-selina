@@ -1,9 +1,17 @@
+
+
+head{
+    font-family: cursive;
+    
+}
+
 body {
     margin: 0;
     /* feel free to change/customize this gradient and font */
     background: linear-gradient(150deg, #000000 0%, #1f1fba 100%, rgb(188, 36, 36));
     /* feel free to change/customize font */
-    font-family: 'Arial', sans-serif;
+   
+    
 }
 
 .flex-container {
@@ -29,40 +37,75 @@ body {
     
 
     .btn1 {  
-        display: inline-block;  
+        display: block;  
         padding: 15px 30px;  
         margin: 5% auto;
         width: 300px;
-        border: 3px dotted red;
+        border: 3px solid rgb(0, 0, 0);
         border-radius: 10px;
         background: #060662;  
         color: white;  
         font-family: 'Comic Sans MS'; 
+        cursor: pointer;
+        transition: all 0.1s ease; 
         
+    }
+    .btn1:hover{
+        background:purple;
+        color: rgb(0, 0, 0);
+        border: 24px dotted yellow;
+        font-size: 50px;
+        transition: all 0.1s ease; 
+    }
+    .btn1:active{
+        transform: rotate(10deg);
     }
 
     .btn2 {  
-        display: inline-block;  
+        display: block;  
         padding: 15px 30px;  
         margin: 5% auto;
         width: 300px;
-        border: 3px dotted red;
+        border: 3px solid rgb(8, 0, 162);
         border-radius: 10px;
         background: #000000;  
         color: white;  
         font-family: 'Comic Sans MS'; 
+        cursor: pointer;
+        transition: all 0.1s ease; 
     }
-
+    .btn2:hover{
+        background:purple;
+        color: rgb(0, 0, 0);
+        border: 24px dotted yellow;
+        font-size: 50px;
+        transition: all 0.1s ease; 
+    }
+    .btn2:active{
+        transform: rotate(10deg);
+    }
     .btn3 {  
-        display: inline-block;  
+        display: block;  
         padding: 15px 30px;  
         margin: 5% auto;
         width: 300px;
-        border: 3px dotted red;
+        border: 3px solid rgb(255, 255, 255);
         border-radius: 10px;
         background: #c01414;  
         color: white;  
         font-family: 'Comic Sans MS'; 
+        cursor: pointer;
+        transition: all 0.1s ease; 
+    }
+    .btn3:hover{
+        background:purple;
+        color: rgb(0, 0, 0);
+        border: 24px dotted yellow;
+        font-size: 50px;
+        transition: all 0.1s ease; 
+    }
+    .btn3:active{
+        transform: rotate(10deg);
     }
 
 
@@ -77,7 +120,7 @@ body {
 
 
 
-}
+
 
 
 
