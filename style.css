@@ -1,23 +1,43 @@
-
-
 head{
-    font-family: cursive;
-    
+
 }
 
+img{
+    /*property ; name duration delay iteration */
+    /* animation: imgSize 5s 2; */
+    border: 5px dotted rgb(190, 215, 200);
+    width: 50%;
+    align-items: center;
+}
 body {
-    margin: 0;
+    align-items: center;
     /* feel free to change/customize this gradient and font */
-    background: linear-gradient(150deg, #000000 0%, #1f1fba 100%, rgb(188, 36, 36));
-    /* feel free to change/customize font */
-   
-    
+    background: linear-gradient(150deg, #000000 0%, #1f1fba 100%, rgb(188, 36, 36)); 
+    animation: backgroundBG 5s infinite;
 }
+    /* feel free to change/customize font * 
+  
 
-.flex-container {
+
+     
     /* Make this into a flexbox using display: flex */
     /* Use flexbox properties to stack your tiles vertically and center them */
+.flex-container{ 
+    display:flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+  
+   
+    /* shifts items on the main axis- also condenses height of the items */ 
+    
 }
+
+
+
 
 .flex-tile {
     /* Make this into a flexbox using display: flex */
@@ -26,15 +46,92 @@ body {
     /* setting the width for each tile */
     width: 50%;
     position: center;
+    
+    
 
     /* spacing tiles */
     margin: 5%;
     padding: 20px;
 
     /* background color for tile, feel free to change */
-    background-color: rgba(255, 255, 255, 0.808); }
+    background-color: rgba(0, 38, 255, 0.696);
+     animation: flex 15s 2s 10s right;
+    border-radius: 30px;
+   text-align: center;
+    color: #000000;
+    animation: flex-tile 20s infinite;
 
-    
+}
+.flex-tile2 {
+    /* Make this into a flexbox using display: flex */
+    /* Use flexbox properties to stack elements in your tiles vertically and center them */
+
+    /* setting the width for each tile */
+    width: 50%;
+  
+
+    /* spacing tiles */
+    margin: 5%;
+    padding: 20px;
+
+    /* background color for tile, feel free to change */
+    background-color: rgba(0, 0, 0, 0.808); 
+    animation: flex 15s 2s 10s right;
+    border-radius: 30px;
+    align-items: center;
+    color: #ffffffb0;
+  animation: flex-tile2 20s infinite;
+  text-align: center;
+}
+
+
+.flex-tile3 {
+    /* Make this into a flexbox using display: flex */
+    /* Use flexbox properties to stack elements in your tiles vertically and center them */
+
+    /* setting the width for each tile */
+    width: 50%;
+    text-align: center;
+ 
+
+    /* spacing tiles */
+    margin: 5%;
+    padding: 20px;
+
+    /* background color for tile, feel free to change */
+    background-color: rgba(177, 6, 6, 0.994); 
+    border-radius: 30px;
+    animation: flex-tile3 20s infinite;
+    color: #000000;
+
+}
+@keyframes flex-tile{
+    0% {width: 400px}
+    position: relative;
+   100% {width: 500px}
+}
+@keyframes flex-tile2 {
+   0% {width: 400px}
+   position: relative;
+  100% {width: 500px}
+}
+@keyframes flex-tile3 {
+    0% {width: 400px}
+    position: relative;
+   100% {width: 500px}
+ }
+ 
+
+
+.flex-tile3:hover{
+    background-color: #380505;
+}
+  .flex-tile:hover{
+    background-color: #41416f;
+  }  
+  .flex-tile2:hover{
+    background-color: #292930;
+  }  
 
     .btn1 {  
         display: block;  
@@ -51,14 +148,14 @@ body {
         
     }
     .btn1:hover{
-        background:purple;
+        background:rgb(168, 181, 255);
         color: rgb(0, 0, 0);
-        border: 24px dotted yellow;
+        border: 10px dotted rgb(0, 9, 38);
         font-size: 50px;
         transition: all 0.1s ease; 
     }
     .btn1:active{
-        transform: rotate(10deg);
+        transform: rotate(50deg);
     }
 
     .btn2 {  
@@ -75,14 +172,14 @@ body {
         transition: all 0.1s ease; 
     }
     .btn2:hover{
-        background:purple;
+        background:rgb(168, 181, 255);
         color: rgb(0, 0, 0);
-        border: 24px dotted yellow;
+        border: 10px dotted rgb(0, 9, 38);
         font-size: 50px;
         transition: all 0.1s ease; 
     }
     .btn2:active{
-        transform: rotate(10deg);
+        transform: rotate(50deg);
     }
     .btn3 {  
         display: block;  
@@ -98,15 +195,24 @@ body {
         transition: all 0.1s ease; 
     }
     .btn3:hover{
-        background:purple;
+        background:rgb(168, 181, 255);
         color: rgb(0, 0, 0);
-        border: 24px dotted yellow;
+        border: 10px dotted rgb(0, 9, 38);
         font-size: 50px;
         transition: all 0.1s ease; 
     }
     .btn3:active{
-        transform: rotate(10deg);
+        transform: rotate(50deg);
     }
+
+
+
+
+
+
+
+
+
 
 
 
